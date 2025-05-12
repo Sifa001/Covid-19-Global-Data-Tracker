@@ -34,16 +34,6 @@ This project explores global trends in COVID-19 cases, deaths, and vaccination e
    cd covid19-data-analysis
 Install the required libraries:
 
-```bash
-pip install pandas matplotlib seaborn plotly jupyter
-Launch the Jupyter Notebook:
-
-```bash
-jupyter notebook
-Open covid19_analysis.ipynb and run the cells step by step.
-
-Alternatively: View the exported report as a PDF if provided in the repo.
-
 ## Key Insights
 Countries like India experienced multiple waves with sharp spikes in cases and deaths.
 
