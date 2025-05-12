@@ -34,15 +34,11 @@ This project explores global trends in COVID-19 cases, deaths, and vaccination e
    cd covid19-data-analysis
 Install the required libraries:
 
-bash
-Copy
-Edit
+```bash
 pip install pandas matplotlib seaborn plotly jupyter
 Launch the Jupyter Notebook:
 
-bash
-Copy
-Edit
+```bash
 jupyter notebook
 Open covid19_analysis.ipynb and run the cells step by step.
 
