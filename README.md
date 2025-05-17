@@ -31,64 +31,24 @@ Python 3.8+: Install via python.org or Anaconda
 Dataset: Download owid-covid-data.csv from Our World in Data
 
 Installation
-bash
+# Option 1: Install from python.org (https://www.python.org/downloads/)
+# Option 2: Install Anaconda (recommended for data science)
+conda create -n covid_env python=3.8
+conda activate covid_env
 # Create and activate conda environment (recommended)
 conda create -n covid_env python=3.8
 conda activate covid_env
 
 # Install required packages
 pip install pandas matplotlib seaborn plotly jupyter
-Project Setup
-Directory Structure:
 
-covid_project/
-├── covid_tracker.ipynb
-├── owid-covid-data.csv
-└── README.md
-Launch Jupyter Notebook:
+# Download the Dataset
+Download owid-covid-data.csv and place it in your project folder.
 
+# Launch Jupyter Notebook
 bash
-cd path/to/covid_project
 jupyter notebook
-Running the Analysis
-Open covid_tracker.ipynb in Jupyter
-
-Run cells sequentially to:
-
-Load and clean COVID-19 data
-
-Generate visualizations:
-
-Time series of cases/deaths
-
-Vaccination progress by country
-
-Interactive choropleth maps
-
-Calculate key metrics:
-
-Mortality rates
-
-Vaccination percentages
-
-Case fatality ratios
-
-Key Insights
-After running the notebook, update this section with your findings. Example metrics:
-
-Global peak death rate: X% on [date]
-
-Top 3 vaccinated countries: [Country A] (X%), [Country B] (Y%), [Country C] (Z%)
-
-Case fatality ratio range: X% (lowest) to Y% (highest) by country
-
-Troubleshooting
-Ensure the CSV file is in the same directory as the notebook
-
-Restart kernel if plotly charts don't render
-
-Update packages with pip install --upgrade pandas plotly
-
+Then open covid_tracker.ipynb from the notebook interface.
 ## Key Insights
 Countries like India experienced multiple waves with sharp spikes in cases and deaths.
 
