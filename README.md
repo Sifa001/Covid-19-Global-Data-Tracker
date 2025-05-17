@@ -1,63 +1,79 @@
-#  COVID-19 Global Data Analysis
+# COVID-19 Global Data Analysis
+This project explores global trends in COVID-19 cases, deaths, and vaccination efforts using data from [Our World in Data](https://ourworldindata.org/covid-deaths). Through comprehensive data analysis and visualization, it reveals insights about the pandemic's progression across different regions.
 
-This project explores global trends in COVID-19 cases, deaths, and vaccination efforts using data from **Our World in Data**. Through data cleaning, visualization, and analysis, it highlights insights about the pandemic's progression across countries and regions.
-
----
-
-## Objectives
-
-- Import and clean COVID-19 global data
-- Analyze time-based trends in cases, deaths, and vaccinations
+##  Objectives
+- Import and clean global COVID-19 dataset
+- Analyze temporal trends in cases, deaths, and vaccinations
 - Compare pandemic metrics across countries and continents
-- Visualize data using clear and informative charts/maps
-- Communicate key findings and insights in a Jupyter Notebook report
+- Create informative visualizations (charts, maps, dashboards)
+- Generate actionable insights from the data
 
----
+## Tools & Technologies
 
-## Tools & Libraries Used
+| Category        | Tools/Libraries |
+|----------------|---------------|
+| **Core**       | Python 3.8+, Jupyter Notebook |
+| **Data Processing** | pandas, numpy |
+| **Visualization** | matplotlib, seaborn, plotly |
+| **Environment** | Anaconda (recommended) |
 
-- **Python 3.x**
-- **Jupyter Notebook**
-- [pandas](https://pandas.pydata.org/) – data manipulation
-- [matplotlib](https://matplotlib.org/) – basic plotting
-- [seaborn](https://seaborn.pydata.org/) – enhanced visualizations
-- [plotly](https://plotly.com/python/)  – for choropleth maps
-- [numpy](https://numpy.org/) – numeric computations
+## Getting Started
 
----
+### Prerequisites
+- Python 3.8+ ([python.org](https://www.python.org/downloads/))
+- OR Anaconda ([anaconda.com](https://www.anaconda.com/download))
 
-## How to Run / View the Project
-Python 3.8+: Install via python.org or Anaconda
-Dataset: Download owid-covid-data.csv from Our World in Data
+### Installation
+1. **Set up environment**:
+   ```bash
+   conda create -n covid_env python=3.8
+   conda activate covid_env
+   ```
 
-Installation
-### Option 1: Install from python.org (https://www.python.org/downloads/)
-### Option 2: Install Anaconda (recommended for data science)
+2. **Install packages**:
+   ```bash
+   pip install pandas matplotlib seaborn plotly jupyter
+   ```
 
-### Install required packages
-pip install pandas matplotlib seaborn plotly jupyter
+3. **Get the data**:
+   - Download [owid-covid-data.csv](https://ourworldindata.org/covid-deaths)
+   - Place in project root directory
 
-### Download the Dataset
-Download owid-covid-data.csv and place it in your project folder.
-
-### Launch Jupyter Notebook
-bash
+### Running the Project
+```bash
 jupyter notebook
-Then open covid_tracker.ipynb from the notebook interface.
-## Key Insights
-Countries like India experienced multiple waves with sharp spikes in cases and deaths.
+```
+Open `covid_tracker.ipynb` and run all cells
 
-High-income countries showed faster vaccination rollout, especially in early 2021.
+##  Key Findings
 
-Some countries had disproportionately high case fatality rates, often tied to healthcare system capacity or reporting standards.
+- **Wave Patterns**: Countries like India experienced multiple distinct waves with sharp case spikes
+- **Vaccination Disparities**: High-income countries achieved 50% vaccination 3-6 months faster than others
+- **Fatality Rates**: Case fatality rates varied from 0.5% to 8% across nations
+- **Regional Impact**: Europe and Americas showed highest per-capita death rates
 
-## Reflections
-This project was a great exercise in:
+##  Sample Visualizations
+1. Time-series of global cases/deaths
+2. Vaccination progress by income group
+3. Interactive choropleth of case fatality rates
 
-Real-world data cleaning and exploration
+##  Reflections
+This project demonstrated:
+- Real-world data cleaning challenges
+- The power of visualization in public health communication
+- Global disparities in pandemic response
+- Python's effectiveness for end-to-end data analysis
 
-Understanding global disparities in healthcare response
+## 📂 Project Structure
+```
+covid-analysis/
+├── data/                   # Raw data files
+│   └── owid-covid-data.csv
+├── covid_tracker.ipynb     # Main analysis notebook
+├── README.md               # This file
+└── visuals/               # Generated charts
+```
 
-Building visual storytelling through data
-
-Using Python tools effectively for public health analysis
+## 📜 License
+[MIT](https://choosealicense.com/licenses/mit/)
+```
