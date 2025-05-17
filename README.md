@@ -31,21 +31,16 @@ Python 3.8+: Install via python.org or Anaconda
 Dataset: Download owid-covid-data.csv from Our World in Data
 
 Installation
-# Option 1: Install from python.org (https://www.python.org/downloads/)
-# Option 2: Install Anaconda (recommended for data science)
-conda create -n covid_env python=3.8
-conda activate covid_env
-# Create and activate conda environment (recommended)
-conda create -n covid_env python=3.8
-conda activate covid_env
+### Option 1: Install from python.org (https://www.python.org/downloads/)
+### Option 2: Install Anaconda (recommended for data science)
 
-# Install required packages
+### Install required packages
 pip install pandas matplotlib seaborn plotly jupyter
 
-# Download the Dataset
+### Download the Dataset
 Download owid-covid-data.csv and place it in your project folder.
 
-# Launch Jupyter Notebook
+### Launch Jupyter Notebook
 bash
 jupyter notebook
 Then open covid_tracker.ipynb from the notebook interface.
